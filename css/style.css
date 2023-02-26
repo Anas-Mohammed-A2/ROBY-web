@@ -1,0 +1,859 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&family=Tajawal:wght@500&display=swap");
+body {
+  background-color: rgb(243, 242, 243);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  }
+  ::-webkit-scrollbar-track{
+  background-color:  rgb(255,235,216);
+  border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background-color:  rgb(245,76,45);
+  border-radius: 50px;
+  height: 100px;
+  }
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background-color: rgb(245,76,45);
+
+  }
+  ::selection {
+    color: white;
+    background-color: rgb(245,76,45);
+  
+  }
+/* ! nav */
+.navbar {
+  background-color: rgb(243, 242, 243);
+}
+.logo {
+  width: 50%;
+}
+.navbar-toggler {
+  display: none;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Link {
+  margin-left: 35px;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  color: #000000;
+  display: block;
+}
+.navbar-brand {
+  text-transform: uppercase;
+}
+.menu{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+}
+.menu a{
+  font-family: "Hind Siliguri", sans-serif;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    display: block;
+    margin-left: 60%;
+  }
+  .Link {
+    display: none;
+  }
+}
+
+/* * home */
+.Home {
+  width: 100%;
+  font-family: "Hind Siliguri", sans-serif;
+  padding: 0 0 100px 130px;
+}
+.home1 {
+  margin-top: 150px;
+}
+.Home p {
+  font-size: 20px;
+}
+.Home h1 {
+  color: black;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.pra {
+  margin: 20px 0;
+}
+.btns {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.3s;
+  background-color: rgb(20, 18, 20);
+}
+
+.home2 img {
+  width: 400px;
+  position: absolute;
+  top: 1.5rem;
+  max-width: initial;
+  transform: rotate(340deg);
+}
+.home2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+.shape {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(21, 19, 21);
+  border-radius: 50%;
+  transform: rotate();
+}
+
+@media screen and (max-width: 813px) {
+  .Home {
+    width: 100%;
+    font-family: "Hind Siliguri", sans-serif;
+    padding: 0 20px;
+  }
+  .Home h1 {
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home2 {
+    margin-top: 100px;
+  }
+  .home2 img {
+    width: 300px;
+  }
+  .shape {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 813px) {
+  .Home {
+    width: 100%;
+    font-family: "Hind Siliguri", sans-serif;
+    padding: 0 100px;
+  }
+}
+/* *Featured */
+.Featured {
+  width: 100%;
+  margin-top: 250px;
+  padding: 0 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.aaaa {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(21, 19, 21);
+  padding: 15px;
+  border-radius: 5px;
+}
+.aaaa:hover {
+  color: white;
+  border-radius: 5px;
+}
+.card {
+  border: none;
+  width: 250px;
+  padding: 30px 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: all 0.9s ;
+border-radius: 10px;
+
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+border-radius:50px;
+transition: all 0.9s ;
+
+}
+
+.cardd {
+  margin-left: 100px;
+}
+.immg_card {
+  text-align: center;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  width: 160px;
+  transform: rotate(330deg);
+}
+
+.title_card {
+    font-size: 25px;
+  font-weight: bold;
+  color: rgb(21, 19, 21);
+  margin-bottom: 15px;
+}
+
+.pris {
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  color: rgb(21, 19, 21);
+  margin-bottom: 25px;
+  font-weight: bolder;
+}
+.cardes {
+  margin-top: 80px;
+}
+.btnss {
+  font-family: "Hind Siliguri", sans-serif;
+  color: rgb(21, 19, 21);
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btnss i {
+  margin-left: 5px;
+}
+.adn{
+display: flex;
+}
+.cardss{
+  margin-left: 50px;
+  background-color: aqua;
+  position: relative;
+  height: 350px;
+  padding:  20px ;
+width: 400px;
+margin-bottom: 30px;
+border-radius: 10px;
+}
+.shose{
+margin-top: 100px;
+padding: 0 180px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.cardss img{
+width: 60%;
+position: absolute;
+right: 0px;
+top: 0;
+z-index: 1;
+}
+.discpdion{
+position: absolute;
+left: 30px;
+bottom: 30px;
+}
+.discpdion h1{
+  font-size: 35px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(21, 19, 21);
+margin-bottom: 10px;
+}
+.discpdion p{
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  color: rgb(120, 115, 120);
+margin-bottom: 10px;
+}
+@media screen and  (min-width: 1600px) {
+  .shose{
+    margin-top: 100px;
+    padding: 0 300px;
+
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 813px) {
+  .Featured {
+    padding: 0 100px;
+  }
+  .cardd {
+    margin-left: 50px;
+  }
+  .shose{
+    padding: 0 100px;
+
+  }
+  .cardss{
+    margin-left: 0px;
+  
+  
+  }
+ 
+  .cardss{
+    background-color: aqua;
+    position: relative;
+    height: 350px;
+    padding:  20px ;
+  width: 250px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-left:30px ;
+  }
+}
+@media screen and (max-width: 813px) and (min-width:767px){
+  .Featured {
+    padding: 0 20px;
+  }
+  .card1 {
+    margin-left: 100px;
+  }
+  .shose{
+    padding: 0 52px;
+
+  }
+  
+  .cardss{
+    background-color: aqua;
+    position: relative;
+    height: 350px;
+    padding:  20px ;
+  width: 250px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-left:30px ;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Featured {
+    margin-top: 150px;
+  }
+  .Featured {
+    padding: 0 20px;
+  }
+  .card1 {
+    margin-left: 100px;
+  }
+  .shose{
+    padding: 0 100px;
+
+  }
+  .cardss{
+    margin-left: 0px;
+    width: 350px;
+
+  }
+}
+@media screen and (max-width: 1011px) and (min-width:992px){
+  .shose{
+    padding: 0 100px;
+
+  }
+  .cardss{
+    margin-left: 30px;
+    width: 350px;
+
+  }
+}
+@media screen and (max-width: 1259px) and (min-width:1011px){
+  .shose{
+    padding: 0 150px;
+
+  }
+  .cardss{
+    margin-left: 30px;
+    width: 400px;
+
+  }
+}
+/* Women */
+
+.Women {
+  width: 100%;
+  margin-top: 150px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Women .card{
+margin-left:30px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 813px) {
+  .Women,.Featured {
+    width: 100%;
+    margin-top: 150px;
+    padding: 0 150px;
+  }
+}
+@media screen and (max-width: 813px) {
+.aaaa{
+font-size: 20px;
+}
+}
+@media screen and (max-width: 767px) {
+  .aaaa{
+    font-size: 20px;
+    }
+}
+
+
+
+
+
+
+/* offer */
+.offer{
+width: 100%;
+padding: 100px;
+}
+.anas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 50px;
+  background-color: aqua;
+  text-align: center;
+}
+
+.anas img{
+width: 200px;
+}
+
+.anas h1{
+  font-family: "Hind Siliguri", sans-serif;
+font-size: 55px;
+font-weight: bold;
+color: #000000;
+}
+.anas p{
+  font-family: "Hind Siliguri", sans-serif;
+font-size: 20px;
+color: #000000;
+margin: 20px 0;
+}
+@media screen and (max-width: 992px) and (min-width: 813px) {
+  .offer{
+    width: 100%;
+    padding: 20px;
+    }
+
+
+}
+  @media screen and (max-width: 813px) {
+
+
+    .anas h1{
+      font-family: "Hind Siliguri", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    }
+    .anas p{
+      font-family: "Hind Siliguri", sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin: 20px 0;
+    }
+
+  }
+    @media screen and (max-width: 767px) {
+
+      .offer{
+        width: 100%;
+        padding: 20px;
+        }
+        .anas h1{
+          font-family: "Hind Siliguri", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
+        }
+        .anas p{
+          font-family: "Hind Siliguri", sans-serif;
+        font-size: 15px;
+        color: #000000;
+        margin: 20px 0;
+        }
+    }
+
+
+
+    /* New */
+.New{
+margin-top: 150px;
+width: 100%;
+padding: 0 100px;
+
+}
+
+.bigCardd{
+  padding: 40px;
+  width: 350px;
+  height: 620px;
+margin-bottom: 30px;
+  border-radius: 10px;
+}
+.bigCardd img{
+margin-top:50px;
+width: 550px;
+
+
+}
+.cardsBdy{
+margin-top:100px;
+}
+.cardsBdy h1{
+  font-size: 35px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  color: rgb(21, 19, 21);
+margin-bottom: 15px;
+}
+
+.cardsBdy p{
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  color: rgb(52, 51, 52);
+margin-bottom: 15px;
+}
+.card_a{
+margin-left: 15px;
+margin-bottom: 50px;
+padding:40px;
+width: 350px;
+height:290px;
+text-align: center;
+position: relative;
+  border-radius: 10px;
+
+}
+.card_a button{
+position: absolute;
+bottom: 10px;
+transform: rotate(270deg);
+left: 10px;
+
+}
+.sect{
+margin-top: 30px;
+}
+@media screen and (max-width: 992px) and (min-width: 813px) {
+  .New{
+    margin-top: 150px;
+    width: 100%;
+    padding: 0 50px;
+    
+    }
+}
+  @media screen and (max-width: 813px) and (min-width:767px) {
+    .New{
+      margin-top: 150px;
+      width: 100%;
+      padding: 0 50px;
+      
+      }
+      
+.bigCardd{
+padding: 40px;
+width: 350px;
+height: 450px;
+margin-bottom: 30px;
+margin-left: 15px;
+}
+.bigCardd img{
+margin-top:20px;
+width: 550px;
+
+
+}
+.cardsBdy{
+margin-top:20px;
+}
+.card_a{
+  margin-left: 15px;
+  margin-bottom: 50px;
+  padding:40px;
+  width: 250px;
+  height:290px;
+  text-align: center;
+  position: relative;
+  
+  }
+  }
+    @media screen and (max-width: 767px) {
+      .New{
+        margin-top: 150px;
+        width: 100%;
+        padding: 0 50px;
+        
+        }
+        
+.bigCardd{
+  padding: 40px;
+  width: 350px;
+  height: 450px;
+margin-bottom: 30px;
+  margin-left: 15px;
+}
+.bigCardd img{
+margin-top:20px;
+width: 550px;
+
+
+}
+.cardsBdy{
+margin-top:20px;
+}
+    }
+
+
+
+
+
+/* SUP */
+
+.btn-11,
+.btn-11 *,
+.btn-11 :after,
+.btn-11 :before,
+.btn-11:after,
+.btn-11:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-11 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-11:disabled {
+  cursor: default;
+}
+.btn-11:-moz-focusring {
+  outline: auto;
+}
+.btn-11 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-11 [hidden] {
+  display: none;
+}
+.btn-11 {
+  border-radius: 5px;
+  border-width: 0px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  background-color: rgb(21, 19, 21);
+  padding: 20px 50px;
+}
+.btn-11 span {
+  mix-blend-mode: difference;
+}
+.btn-11:before {
+  -webkit-animation: bg-scroll 3s linear infinite;
+  animation: bg-scroll 3s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.2) 0.7%,
+    transparent 0,
+    transparent 4%
+  );
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+  width: 300%;
+}
+.btn-11:hover:before {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-11:active:before {
+  background-color: #fff;
+}
+@-webkit-keyframes bg-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(33%);
+  }
+}
+@keyframes bg-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(33%);
+  }
+}
+
+
+
+.divv_1 h1{
+  font-size: 45px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  color: rgb(21, 19, 21);
+margin-bottom: 15px;
+text-align: center;
+}
+.divv_1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.divv_1 p{
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  color: rgb(21, 19, 21);
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+.divb{
+padding: 80px 50px;
+border-radius: 8px;
+}
+.supscrp{
+  padding: 0 100px;
+  width: 100%;
+  display: block;
+  margin-top: 150px;
+  margin-bottom: 250px;
+}
+
+
+.sersh input{
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 50px;
+  padding:40px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 22px;
+  }
+.sersh{
+  position: relative;
+}
+.sersh button{
+  cursor: pointer;
+position: absolute;
+top: 60%;
+right: 110px;
+transform: translateY(-50%);
+}
+
+
+
+
+@media screen and (max-width: 1326px) {
+  .supscrp{
+    display: none;
+  }
+}
+
+
+
+/* footer */
+.text-uppercase{
+font-family: "Hind Siliguri", sans-serif;
+font-weight: bold;
+color: rgb(21, 19, 21);
+font-size: 20px;
+}
+footer p{
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  color: rgb(21, 19, 21);
+margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/* upp btn */
+.upp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.upp i {
+  background-color: rgb(21, 19, 21);
+  padding: 15px;
+  color: white;
+  border-radius: 50%;
+}
